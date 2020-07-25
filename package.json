@@ -1,0 +1,17 @@
+{
+  "name": "coivd-19regression",
+  "version": "1.0.0",
+  "description": "Covid 19 Predictor",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Noel Gregory",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security"
+  }
+}

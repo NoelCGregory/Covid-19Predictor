@@ -1,0 +1,53 @@
+|<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Data</title>
+    <!-- p5.js libary-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <!--BootStrap -->
+    <!-- CSS only -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- Main code-->
+    <script src='trainData.js'></script>
+</head>
+<body>
+    <div class="container">
+        <div class="panel panel-default">
+          <div class="panel-heading"><strong>Upload Json</strong> <small>Polynomial Regression Trainer</small></div>
+          <div class="panel-body">
+            <!-- DropMenu-->
+            <select class="btn btn-primary " id="topicMenu">
+            </select>
+            <select class="btn btn-primary " id="countryMenu">
+            </select>
+            <select class="btn btn-primary " id="iterMenu">
+            </select>
+            <!-- Standar Form -->
+            <h4>Select Json files from your computer</h4>
+            <!-- Drop Zone -->
+            <h4>drag and drop files below</h4>
+            <div class="upload-drop-zone" id="drop-zone">
+              Just drag and drop files here
+            </div>
+            <!--Submit button-->
+            <button class="btn btn-primary" type="submit" id="trainBtn" >Train</button>
+            <a href="index.html" class="btn btn-primary" role="button" aria-pressed="true">Go To Predicter </a>
+            <!-- Upload Finished -->
+            <div class="js-upload-finished">
+              <h3>Processed files</h3>
+              <div class="list-group">
+                <div id='respTxt'></div>
+                <a href="#" class="list-group-item list-group-item-success" id='fileTxt' ><span class="badge alert-success pull-right"></span>File Name</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- /container -->
+</body>
+</html>
